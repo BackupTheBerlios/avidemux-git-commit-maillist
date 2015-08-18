@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 747aa413e60d3ed0b53ce15a22154afbc1d7992a
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/avidemux-git-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20747aa413e60d3ed0b53ce15a22154afbc1d7992a&In-Reply-To=%3C200901071928.n07JSq3F029127%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   <LINK REL="Next"  HREF="000008.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 747aa413e60d3ed0b53ce15a22154afbc1d7992a</H1>
+    <B>mean at users.berlios.de</B> 
+    <A HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20747aa413e60d3ed0b53ce15a22154afbc1d7992a&In-Reply-To=%3C200901071928.n07JSq3F029127%40sheep.berlios.de%3E"
+       TITLE="[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 747aa413e60d3ed0b53ce15a22154afbc1d7992a">mean at users.berlios.de
+       </A><BR>
+    <I>Wed Jan  7 20:28:52 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. cb208bb91d8f9ea0a40ef09a6945871bfa60dd3e
+</A></li>
+        <LI>Next message: <A HREF="000008.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 852253b7521f61d26947438802e276f9dd3051a3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;Project avidemux at BerliOS&quot;.
+
+The branch, master has been updated
+       via  747aa413e60d3ed0b53ce15a22154afbc1d7992a (commit)
+      from  cb208bb91d8f9ea0a40ef09a6945871bfa60dd3e (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit 747aa413e60d3ed0b53ce15a22154afbc1d7992a
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Wed Jan 7 20:28:19 2009 +0100
+
+    [All] Warning fix part2 (lu vs llu etc...)
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ avidemux/ADM_audiocodec/ADM_pluginLoad.cpp         |    2 +-
+ .../ADM_coreAudio/src/ADM_audioStreamBuffered.cpp  |    2 +-
+ .../src/ADM_audioDeviceThreaded.cpp                |   18 +-
+ avidemux/ADM_coreDemuxerMpeg/src/dmx_demuxerPS.cpp |    8 +-
+ avidemux/ADM_coreImage/src/ADM_confCouple.cpp      |    4 +-
+ avidemux/ADM_coreUtils/src/avidemutils.cpp         |    7 +-
+ avidemux/ADM_editor/ADM_edCache.cpp                |   14 +-
+ avidemux/ADM_editor/ADM_edRender.cpp               |  280 +++++++-------
+ avidemux/ADM_editor/ADM_edit.cpp                   |   20 +-
+ avidemux/ADM_encoder/ADM_pluginLoad.cpp            |    4 +-
+ avidemux/ADM_encoder/adm_encConfig.cpp             |    6 +-
+ avidemux/ADM_encoder/adm_encRequant.cpp            |   16 +-
+ avidemux/ADM_encoder/adm_encffmpeg.cpp             |    4 +-
+ avidemux/ADM_filter/filter_saveload.cpp            |    4 +-
+ avidemux/ADM_libraries/ADM_libmpeg2enc/ratectl.cc  |   88 ++--
+ .../ADM_xvidratectl/ADM_xvidratectlVBV.cpp         |   68 ++--
+ avidemux/ADM_mpegIndexer/dmx_indexer.cpp           |   78 ++--
+ avidemux/ADM_requant/tcrequant.c                   |  432 ++++++++++----------
+ avidemux/ADM_toolkit/automation.cpp                |  104 +++---
+ .../ADM_GTK/ADM_dialog/DIA_calculator.cpp          |   96 +++---
+ .../ADM_GTK/ADM_dialog/DIA_encoding.cpp            |   66 ++--
+ .../ADM_GTK/ADM_dialog/DIA_idx_pg.cpp              |   10 +-
+ .../ADM_GTK/ADM_dialog/DIA_jobs.cpp                |   34 +-
+ .../ADM_GTK/ADM_dialog/DIA_properties.cpp          |   26 +-
+ .../ADM_render/GUI_sdlRender.cpp                   |   36 +-
+ .../ADM_userInterfaces/ADM_render/GUI_xvRender.cpp |   38 +-
+ avidemux/ADM_video/ADM_vidNull.cpp                 |   24 +-
+ avidemux/ADM_video/ADM_vidPartial.cpp              |   18 +-
+ avidemux/ADM_video/ADM_vidRaw.cpp                  |    6 +-
+ avidemux/gtk_gui.cpp                               |  280 +++++++-------
+ 30 files changed, 897 insertions(+), 896 deletions(-)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. cb208bb91d8f9ea0a40ef09a6945871bfa60dd3e
+</A></li>
+	<LI>Next message: <A HREF="000008.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 852253b7521f61d26947438802e276f9dd3051a3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">More information about the Avidemux-git-commit
+mailing list</a><br>
+</body></html>

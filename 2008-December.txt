@@ -1,0 +1,196 @@
+From mean at users.berlios.de  Thu Dec 11 20:24:31 2008
+From: mean at users.berlios.de (mean at users.berlios.de)
+Date: Thu, 11 Dec 2008 20:24:31 +0100
+Subject: [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,
+	master, updated. 804fbf8d4900588fec66517a4a004f6d096cd7b6
+Message-ID: <200812111924.mBBJOVKM018671@sheep.berlios.de>
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project "Project avidemux at BerliOS".
+
+The branch, master has been updated
+       via  804fbf8d4900588fec66517a4a004f6d096cd7b6 (commit)
+      from  32ccfc6ee1158588e33d058089fc74526a0b36a3 (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit 804fbf8d4900588fec66517a4a004f6d096cd7b6
+Author: fx <fx at quad.(none)>
+Date:   Thu Dec 11 20:22:46 2008 +0100
+
+    [Muxer/avi] Try to better construct mp3 avi header when nb sample per block !=1152 (uncomplete)
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ plugins/ADM_muxers/muxerAvi/muxerAvi.cpp    |    6 ++++--
+ plugins/ADM_muxers/muxerAvi/op_aviwrite.cpp |   21 ++++++++++++++++++++-
+ 2 files changed, 24 insertions(+), 3 deletions(-)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+
+From mean at users.berlios.de  Sun Dec 14 12:00:26 2008
+From: mean at users.berlios.de (mean at users.berlios.de)
+Date: Sun, 14 Dec 2008 12:00:26 +0100
+Subject: [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,
+	master, updated. 065878f4d5a719e0b36068d09ee4d91361282c2b
+Message-ID: <200812141100.mBEB0QYu019443@sheep.berlios.de>
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project "Project avidemux at BerliOS".
+
+The branch, master has been updated
+       via  065878f4d5a719e0b36068d09ee4d91361282c2b (commit)
+       via  24f967850701891830783ebce12d0b1443944879 (commit)
+      from  804fbf8d4900588fec66517a4a004f6d096cd7b6 (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit 065878f4d5a719e0b36068d09ee4d91361282c2b
+Author: fx <fx at quad.(none)>
+Date:   Sun Dec 14 12:00:09 2008 +0100
+
+    [muxer/avi] Better mp3 header when vbr
+
+commit 24f967850701891830783ebce12d0b1443944879
+Author: fx <fx at quad.(none)>
+Date:   Sun Dec 14 11:01:10 2008 +0100
+
+    [Muxer/avi] Cleanup audio track structure
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ plugins/ADM_muxers/muxerAvi/op_aviwrite.cpp |   44 +++++++++++++++++++++-----
+ plugins/ADM_muxers/muxerAvi/op_aviwrite.hxx |   22 +++++++++++--
+ 2 files changed, 53 insertions(+), 13 deletions(-)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+
+From mean at users.berlios.de  Tue Dec 30 11:15:06 2008
+From: mean at users.berlios.de (mean at users.berlios.de)
+Date: Tue, 30 Dec 2008 11:15:06 +0100
+Subject: [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,
+	master, updated. ba6b46381c7b932503f0a382ab0a56b8d0aaaebe
+Message-ID: <200812301015.mBUAF6Wl018729@sheep.berlios.de>
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project "Project avidemux at BerliOS".
+
+The branch, master has been updated
+       via  ba6b46381c7b932503f0a382ab0a56b8d0aaaebe (commit)
+       via  265f216b4078c92172add278c731c3f3bf9c1ec7 (commit)
+       via  a5b650589386dec2578ba8d0908600309f5ccef7 (commit)
+       via  5b4b9a28a49f99cfa5bd5516ed0392a78f647559 (commit)
+       via  5a78f09cc7f7b7d387b341eda09351f21247d6c7 (commit)
+       via  9b9141a960529adad906926d030e39212783a734 (commit)
+       via  12a8e38fa30a5d2341e223ec89c0a594adacc78f (commit)
+       via  c0cbe485ff2110f1e8345c358497b2001f98f696 (commit)
+      from  065878f4d5a719e0b36068d09ee4d91361282c2b (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit ba6b46381c7b932503f0a382ab0a56b8d0aaaebe
+Author: fx <fx at quad.(none)>
+Date:   Tue Dec 30 11:05:02 2008 +0100
+
+    [PS demuxer] Add the PS packet class
+
+commit 265f216b4078c92172add278c731c3f3bf9c1ec7
+Author: fx <fx at quad.(none)>
+Date:   Tue Dec 30 11:04:46 2008 +0100
+
+    [Core] Add LLD to our 32/64 bits friend
+
+commit a5b650589386dec2578ba8d0908600309f5ccef7
+Author: fx <fx at quad.(none)>
+Date:   Tue Dec 30 11:04:28 2008 +0100
+
+    [Demuxer] Define ADM_NO_PTS if not defined yet
+
+commit 5b4b9a28a49f99cfa5bd5516ed0392a78f647559
+Author: fx <fx at quad.(none)>
+Date:   Tue Dec 30 11:04:00 2008 +0100
+
+    [Flv demuxer] Actually returns something as videoduration
+
+commit 5a78f09cc7f7b7d387b341eda09351f21247d6c7
+Author: fx <fx at quad.(none)>
+Date:   Mon Dec 29 15:35:53 2008 +0100
+
+    [PS Demuxer] skeleton for PS packetizer
+
+commit 9b9141a960529adad906926d030e39212783a734
+Author: fx <fx at quad.(none)>
+Date:   Mon Dec 29 15:35:37 2008 +0100
+
+    [global] extended LX/LU/LLX/LLU macro so that they work on all systems
+
+commit 12a8e38fa30a5d2341e223ec89c0a594adacc78f
+Author: fx <fx at quad.(none)>
+Date:   Mon Dec 29 15:00:46 2008 +0100
+
+    [Demuxer] PS skeleton (mpeg2 only)
+
+commit c0cbe485ff2110f1e8345c358497b2001f98f696
+Author: fx <fx at quad.(none)>
+Date:   Mon Dec 29 15:00:41 2008 +0100
+
+    [Demuxer] PS skeleton (mpeg2 only)
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ avidemux/ADM_core/include/ADM_assert.h             |   18 +-
+ avidemux/ADM_coreDemuxer/include/ADM_Video.h       |    5 +
+ plugins/ADM_demuxers/CMakeLists.txt                |    1 +
+ plugins/ADM_demuxers/Flv/ADM_flv.cpp               |    1 +
+ plugins/ADM_demuxers/Matroska/ADM_mkvTrackType.cpp |    1 +
+ plugins/ADM_demuxers/MpegPS/ADM_ps.cpp             |  173 +++++++++
+ plugins/ADM_demuxers/MpegPS/ADM_ps.h               |  100 +++++
+ .../ADM_flvAudio.cpp => MpegPS/ADM_psAudio.cpp}    |    7 +-
+ .../ADM_flvIndex.cpp => MpegPS/ADM_psIndex.cpp}    |    3 +-
+ .../ADM_mkvPlugin.cpp => MpegPS/ADM_psPlugin.cpp}  |   30 +-
+ plugins/ADM_demuxers/MpegPS/CMakeLists.txt         |   16 +
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.cpp        |  390 ++++++++++++++++++++
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.h          |   32 ++
+ .../src => plugins/ADM_demuxers/MpegPS}/dmx_io.cpp |   42 +++
+ .../ADM_demuxers/MpegPS}/dmx_io.h                  |    1 +
+ 15 files changed, 806 insertions(+), 14 deletions(-)
+ create mode 100644 plugins/ADM_demuxers/MpegPS/ADM_ps.cpp
+ create mode 100644 plugins/ADM_demuxers/MpegPS/ADM_ps.h
+ copy plugins/ADM_demuxers/{Flv/ADM_flvAudio.cpp => MpegPS/ADM_psAudio.cpp} (97%)
+ copy plugins/ADM_demuxers/{Flv/ADM_flvIndex.cpp => MpegPS/ADM_psIndex.cpp} (99%)
+ copy plugins/ADM_demuxers/{Matroska/ADM_mkvPlugin.cpp => MpegPS/ADM_psPlugin.cpp} (65%)
+ create mode 100644 plugins/ADM_demuxers/MpegPS/CMakeLists.txt
+ create mode 100644 plugins/ADM_demuxers/MpegPS/dmxPSPacket.cpp
+ create mode 100644 plugins/ADM_demuxers/MpegPS/dmxPSPacket.h
+ copy {avidemux/ADM_coreDemuxerMpeg/src => plugins/ADM_demuxers/MpegPS}/dmx_io.cpp (97%)
+ copy {avidemux/ADM_coreDemuxerMpeg/include => plugins/ADM_demuxers/MpegPS}/dmx_io.h (98%)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+

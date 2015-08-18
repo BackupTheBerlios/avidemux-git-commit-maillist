@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. b437e61bf193351d3dd2d6e7d8dc27086a183d42
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/avidemux-git-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20b437e61bf193351d3dd2d6e7d8dc27086a183d42&In-Reply-To=%3C200901011556.n01FuJQu016173%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000004.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. b437e61bf193351d3dd2d6e7d8dc27086a183d42</H1>
+    <B>mean at users.berlios.de</B> 
+    <A HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20b437e61bf193351d3dd2d6e7d8dc27086a183d42&In-Reply-To=%3C200901011556.n01FuJQu016173%40sheep.berlios.de%3E"
+       TITLE="[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. b437e61bf193351d3dd2d6e7d8dc27086a183d42">mean at users.berlios.de
+       </A><BR>
+    <I>Thu Jan  1 16:56:19 CET 2009</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000004.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 37c2eade2675af4b18c82586dc9c693ba72b9c43
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;Project avidemux at BerliOS&quot;.
+
+The branch, master has been updated
+       via  b437e61bf193351d3dd2d6e7d8dc27086a183d42 (commit)
+       via  7929699a9f0b70e0d6c28950bb70f81caa8ebb15 (commit)
+       via  40a73ad6965ed73fe68b610fbe1415e563c29010 (commit)
+       via  2d09ff8efe3addcbf8fd5dd531fe891908cc850a (commit)
+      from  ba6b46381c7b932503f0a382ab0a56b8d0aaaebe (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit b437e61bf193351d3dd2d6e7d8dc27086a183d42
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Thu Jan 1 16:55:58 2009 +0100
+
+    [PSDemuxer] skeleton for loading images (no sound). Not working. Added a flexible indexer parser
+
+commit 7929699a9f0b70e0d6c28950bb70f81caa8ebb15
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Thu Jan 1 16:55:31 2009 +0100
+
+    [Core] constify
+
+commit 40a73ad6965ed73fe68b610fbe1415e563c29010
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Thu Jan 1 10:55:35 2009 +0100
+
+    [psIndexer] startCode file
+
+commit 2d09ff8efe3addcbf8fd5dd531fe891908cc850a
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Thu Jan 1 10:55:04 2009 +0100
+
+    [psIndexer] Added the indexfile utility class+begin indexer
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ avidemux/ADM_core/include/ADM_assert.h             |    2 +-
+ avidemux/ADM_core/src/ADM_misc.cpp                 |    2 +-
+ avidemux/ADM_coreDemuxerMpeg/include/dmx_demuxer.h |    6 +-
+ plugins/ADM_demuxers/MpegPS/ADM_indexFile.cpp      |  220 ++++++++++++++++++++
+ plugins/ADM_demuxers/MpegPS/ADM_indexFile.h        |   73 +++++++
+ plugins/ADM_demuxers/MpegPS/ADM_ps.cpp             |  166 ++++++++++++++-
+ plugins/ADM_demuxers/MpegPS/ADM_ps.h               |   26 ++-
+ plugins/ADM_demuxers/MpegPS/ADM_psIndex.cpp        |  220 +++++++++++++++++---
+ plugins/ADM_demuxers/MpegPS/ADM_psPlugin.cpp       |   40 +++--
+ plugins/ADM_demuxers/MpegPS/CMakeLists.txt         |    1 +
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.cpp        |  139 ++++++++++++-
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.h          |   39 ++++-
+ plugins/ADM_demuxers/MpegPS/dmx_io.cpp             |    7 +-
+ .../ADM_demuxers/MpegPS}/dmx_mpegstartcode.h       |    2 +-
+ 14 files changed, 868 insertions(+), 75 deletions(-)
+ create mode 100644 plugins/ADM_demuxers/MpegPS/ADM_indexFile.cpp
+ create mode 100644 plugins/ADM_demuxers/MpegPS/ADM_indexFile.h
+ copy {avidemux/ADM_coreDemuxerMpeg/include =&gt; plugins/ADM_demuxers/MpegPS}/dmx_mpegstartcode.h (88%)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000004.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 37c2eade2675af4b18c82586dc9c693ba72b9c43
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">More information about the Avidemux-git-commit
+mailing list</a><br>
+</body></html>

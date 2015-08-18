@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. d75e4d5ff33670bb79d36ff72eccce07395910ba
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/avidemux-git-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20d75e4d5ff33670bb79d36ff72eccce07395910ba&In-Reply-To=%3C200901111704.n0BH4lCp007057%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000008.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. d75e4d5ff33670bb79d36ff72eccce07395910ba</H1>
+    <B>mean at users.berlios.de</B> 
+    <A HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%20d75e4d5ff33670bb79d36ff72eccce07395910ba&In-Reply-To=%3C200901111704.n0BH4lCp007057%40sheep.berlios.de%3E"
+       TITLE="[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. d75e4d5ff33670bb79d36ff72eccce07395910ba">mean at users.berlios.de
+       </A><BR>
+    <I>Sun Jan 11 18:04:47 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000008.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 852253b7521f61d26947438802e276f9dd3051a3
+</A></li>
+        <LI>Next message: <A HREF="000010.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 0367d75cbc259be26e9bb431efdf0e5ee1004ecb
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;Project avidemux at BerliOS&quot;.
+
+The branch, master has been updated
+       via  d75e4d5ff33670bb79d36ff72eccce07395910ba (commit)
+      from  852253b7521f61d26947438802e276f9dd3051a3 (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit d75e4d5ff33670bb79d36ff72eccce07395910ba
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Fri Jan 9 19:41:24 2009 +0100
+
+    [Plugins] Fix lu vs llu
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ .../ADM_audioDecoders/ADM_ad_ac3/ADM_ad_a52.cpp    |   14 +-
+ .../ADM_ad_ac3/ADM_liba52/parse.c                  |   13 +-
+ .../ADM_audioDecoders/ADM_ad_faad/ADM_ad_faad.cpp  |   32 +++---
+ .../ADM_ad_vorbis/ADM_ad_vorbis.cpp                |   50 ++++----
+ plugins/ADM_audioDevices/Alsa/ADM_deviceALSA.cpp   |   16 ++--
+ plugins/ADM_audioDevices/Esd/ADM_deviceEsd.cpp     |   14 +-
+ .../ADM_audioEncoders/lame/audioencoder_lame.cpp   |   20 ++--
+ plugins/ADM_audioEncoders/pcm/audioencoder_pcm.cpp |   38 +++---
+ .../twolame/audioencoder_twolame.cpp               |   64 +++++-----
+ .../vorbis/audioencoder_vorbis.cpp                 |   92 +++++++-------
+ plugins/ADM_demuxers/Flv/ADM_flv.cpp               |  128 ++++++++++----------
+ plugins/ADM_demuxers/Matroska/ADM_mkv.cpp          |   10 +-
+ plugins/ADM_demuxers/Matroska/ADM_mkvEntries.cpp   |    2 +-
+ plugins/ADM_demuxers/Matroska/ADM_mkvIndexer.cpp   |   22 ++--
+ plugins/ADM_demuxers/Matroska/ADM_mkv_audio.cpp    |   18 ++--
+ plugins/ADM_demuxers/Matroska/ebml.cpp             |   84 +++++++-------
+ plugins/ADM_demuxers/Mp4/ADM_atom.cpp              |    6 +-
+ plugins/ADM_demuxers/Mp4/ADM_mp4.cpp               |   74 ++++++------
+ plugins/ADM_demuxers/Mp4/ADM_mp4Analyzer.cpp       |   24 ++--
+ plugins/ADM_demuxers/Mp4/ADM_mp4audio.cpp          |   12 +-
+ plugins/ADM_demuxers/MpegPS/dmx_io.cpp             |  102 ++++++++--------
+ plugins/ADM_demuxers/OpenDml/ADM_odml_odml.cpp     |  107 ++++++++---------
+ plugins/ADM_demuxers/OpenDml/ADM_openDMLDepack.cpp |   76 ++++++------
+ plugins/ADM_demuxers/Pictures/ADM_pics.cpp         |   18 ++--
+ plugins/ADM_muxers/muxerAvi/muxerAvi.cpp           |   28 ++--
+ plugins/ADM_muxers/muxerAvi/op_aviwrite.cpp        |   46 ++++----
+ plugins/ADM_muxers/muxerFlv/muxerFlv.cpp           |   38 +++---
+ plugins/CMakeLists.txt                             |    8 +-
+ 28 files changed, 573 insertions(+), 583 deletions(-)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000008.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 852253b7521f61d26947438802e276f9dd3051a3
+</A></li>
+	<LI>Next message: <A HREF="000010.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 0367d75cbc259be26e9bb431efdf0e5ee1004ecb
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">More information about the Avidemux-git-commit
+mailing list</a><br>
+</body></html>

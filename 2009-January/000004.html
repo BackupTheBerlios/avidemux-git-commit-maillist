@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 37c2eade2675af4b18c82586dc9c693ba72b9c43
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/avidemux-git-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%2037c2eade2675af4b18c82586dc9c693ba72b9c43&In-Reply-To=%3C200901031103.n03B3pVh028954%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000003.html">
+   <LINK REL="Next"  HREF="000005.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 37c2eade2675af4b18c82586dc9c693ba72b9c43</H1>
+    <B>mean at users.berlios.de</B> 
+    <A HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%2037c2eade2675af4b18c82586dc9c693ba72b9c43&In-Reply-To=%3C200901031103.n03B3pVh028954%40sheep.berlios.de%3E"
+       TITLE="[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 37c2eade2675af4b18c82586dc9c693ba72b9c43">mean at users.berlios.de
+       </A><BR>
+    <I>Sat Jan  3 12:03:51 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000003.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. b437e61bf193351d3dd2d6e7d8dc27086a183d42
+</A></li>
+        <LI>Next message: <A HREF="000005.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 26b400d3656c89f173db7f5047fd4f460be24bfe
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;Project avidemux at BerliOS&quot;.
+
+The branch, master has been updated
+       via  37c2eade2675af4b18c82586dc9c693ba72b9c43 (commit)
+       via  2828a009d089e9dc27b7ca2961544bb8da76ea9a (commit)
+       via  eebd458551fd49b1847691dde3f02e116a9865d0 (commit)
+       via  5a192dfd0ce3dcbb619a8889e056463ee59de64e (commit)
+      from  b437e61bf193351d3dd2d6e7d8dc27086a183d42 (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit 37c2eade2675af4b18c82586dc9c693ba72b9c43
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Sat Jan 3 12:02:09 2009 +0100
+
+    [psDemux] Workish index
+
+commit 2828a009d089e9dc27b7ca2961544bb8da76ea9a
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Sat Jan 3 09:56:18 2009 +0100
+
+    [psDemuxer] Try to detect PS file in probe
+
+commit eebd458551fd49b1847691dde3f02e116a9865d0
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Fri Jan 2 20:05:55 2009 +0100
+
+    [psDemux] fix pspacket::read
+
+commit 5a192dfd0ce3dcbb619a8889e056463ee59de64e
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Fri Jan 2 18:48:19 2009 +0100
+
+    [psDemuxer] more up to date video decoding &amp; stuff
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ plugins/ADM_demuxers/MpegPS/ADM_ps.cpp       |  121 +++++++++++++++++++---
+ plugins/ADM_demuxers/MpegPS/ADM_ps.h         |    2 +
+ plugins/ADM_demuxers/MpegPS/ADM_psIndex.cpp  |  147 +++++++++++++++++++-------
+ plugins/ADM_demuxers/MpegPS/ADM_psPlugin.cpp |   50 ++++++++-
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.cpp  |   82 ++++++++++++---
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.h    |   19 +++-
+ 6 files changed, 350 insertions(+), 71 deletions(-)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000003.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. b437e61bf193351d3dd2d6e7d8dc27086a183d42
+</A></li>
+	<LI>Next message: <A HREF="000005.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 26b400d3656c89f173db7f5047fd4f460be24bfe
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">More information about the Avidemux-git-commit
+mailing list</a><br>
+</body></html>

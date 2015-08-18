@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 5a774974528deb2369bf7d7802eae7baf6d21776
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/avidemux-git-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%205a774974528deb2369bf7d7802eae7baf6d21776&In-Reply-To=%3C200901161847.n0GIlmbp014194%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000013.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 5a774974528deb2369bf7d7802eae7baf6d21776</H1>
+    <B>mean at users.berlios.de</B> 
+    <A HREF="mailto:avidemux-git-commit%40lists.berlios.de?Subject=Re%3A%20%5BAvidemux-git-commit%5D%20%5BGit%5DProject%20avidemux%20at%20BerliOS%20branch%2C%0A%09master%2C%20updated.%205a774974528deb2369bf7d7802eae7baf6d21776&In-Reply-To=%3C200901161847.n0GIlmbp014194%40sheep.berlios.de%3E"
+       TITLE="[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 5a774974528deb2369bf7d7802eae7baf6d21776">mean at users.berlios.de
+       </A><BR>
+    <I>Fri Jan 16 19:47:48 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 3c2e5a8255ebef41ef84eef28c1796299cb231f2
+</A></li>
+        <LI>Next message: <A HREF="000013.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 1b3ae763e91aa88b550c31f136c9411d79c5dd0a
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;Project avidemux at BerliOS&quot;.
+
+The branch, master has been updated
+       via  5a774974528deb2369bf7d7802eae7baf6d21776 (commit)
+       via  961b7d607c4ddd617573d363089697c12b955db3 (commit)
+       via  c8b20dafe3bb4d0a8b575c74c8f2d09f7542063e (commit)
+      from  3c2e5a8255ebef41ef84eef28c1796299cb231f2 (commit)
+
+Those revisions listed above that are new to this repository have
+not appeared on any other notification email; so we list those
+revisions in full, below.
+
+- Log -----------------------------------------------------------------
+commit 5a774974528deb2369bf7d7802eae7baf6d21776
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Fri Jan 16 19:47:29 2009 +0100
+
+    [PsDemuxer] Destroy audio tracks at the end
+
+commit 961b7d607c4ddd617573d363089697c12b955db3
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Fri Jan 16 19:45:29 2009 +0100
+
+    [PsDemuxer] Added brute force audio track identifier
+
+commit c8b20dafe3bb4d0a8b575c74c8f2d09f7542063e
+Author: fx &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">fx at quad.</A>(none)&gt;
+Date:   Thu Jan 15 07:30:45 2009 +0100
+
+    [PSDemux] Skeleton for probeaudio
+
+-----------------------------------------------------------------------
+
+Summary of changes:
+ plugins/ADM_demuxers/MpegPS/ADM_psAudioProbe.cpp   |  191 ++++++++++++++++++++
+ .../ADM_demuxers/MpegPS/ADM_psAudioProbe.h         |   43 ++---
+ plugins/ADM_demuxers/MpegPS/ADM_psIndex.cpp        |   19 ++
+ plugins/ADM_demuxers/MpegPS/CMakeLists.txt         |    3 +
+ plugins/ADM_demuxers/MpegPS/dmxPSPacket.h          |    2 +
+ 5 files changed, 233 insertions(+), 25 deletions(-)
+ create mode 100644 plugins/ADM_demuxers/MpegPS/ADM_psAudioProbe.cpp
+ copy avidemux/ADM_osSupport/ADM_queue.h =&gt; plugins/ADM_demuxers/MpegPS/ADM_psAudioProbe.h (57%)
+
+
+hooks/post-receive
+-- 
+Project avidemux at BerliOS
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 3c2e5a8255ebef41ef84eef28c1796299cb231f2
+</A></li>
+	<LI>Next message: <A HREF="000013.html">[Avidemux-git-commit] [Git]Project avidemux at BerliOS branch,	master, updated. 1b3ae763e91aa88b550c31f136c9411d79c5dd0a
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/avidemux-git-commit">More information about the Avidemux-git-commit
+mailing list</a><br>
+</body></html>
